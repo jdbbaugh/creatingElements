@@ -1,4 +1,4 @@
-let messageBoard = document.getElementById('messages');
+const fragment = document.createDocumentFragment();
 
 
 
@@ -16,13 +16,17 @@ const message2 = message('but they came back to life', 'message');
 const message3 = message('I mean they all laugh about it now', 'message');
 const message4 = message('kinda', 'message');
 const message5 = message('Except that one family...they are still quite pissed', 'message');
+const message6 = message('this worked?.....whoaaaa', 'message');
 
 
-messageBoard.appendChild(message1);
-messageBoard.appendChild(message2);
-messageBoard.appendChild(message3);
-messageBoard.appendChild(message4);
-messageBoard.appendChild(message5);
+fragment.appendChild(message1);
+fragment.appendChild(message2);
+fragment.appendChild(message3);
+fragment.appendChild(message4);
+fragment.appendChild(message5);
+fragment.appendChild(message6);
+
+document.querySelector('#messages').appendChild(fragment);
 
 
 
